@@ -1,37 +1,122 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bella Pizza</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- CDN do Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=K2D:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+    <!-- Header com Flexbox -->
     <header class="header">
-        <div class="logo">
-            Bella Pizza
-<<<<<<< HEAD
-        </div>
         <div class="container">
-            <nav>
-                
-            </nav>
-=======
->>>>>>> 2d133c31f31e533d85056e75db4681371a1ddb16
+            <div class="nav">
+                <div class="logo">Bella Pizza</div>
+                <nav class="menu">
+                    <a href="#home">Início</a>
+                    <a href="#produtos">Produtos</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+            </div>
         </div>
-        <nav>
-            
-        </nav>
     </header>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
 
-</html>
+    <!-- Hero Section com Flexbox -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>    O sabor da Itália na sua mesa</h1>
+            <p>Pizzas artesanais feitas com ingredientes frescos e selecionados</p>
+            <button class="btn-primary">Peça já sua pizza!</button>
+        </div>
+    </section>
+
+    <!-- Cards de Produtos com Flexbox -->
+    <section class="produtos" id="produtos">
+        <div class="container">
+            <h2 class="section-title">Nossos Cafés</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=300&fit=crop" alt="Café Expresso">
+                    <div class="card-content">
+                        <h3>Expresso Intenso</h3>
+                        <p>Sabor marcante e encorpado, perfeito para quem aprecia café forte</p>
+                        <span class="price">R$ 18,90</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=400&h=300&fit=crop" alt="Café Cappuccino">
+                    <div class="card-content">
+                        <h3>Cappuccino Cremoso</h3>
+                        <p>Combinação perfeita de café, leite vaporizado e espuma aveludada</p>
+                        <span class="price">R$ 15,90</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop" alt="Café Latte">
+                    <div class="card-content">
+                        <h3>Latte Suave</h3>
+                        <p>Café suave com muito leite, ideal para momentos relaxantes</p>
+                        <span class="price">R$ 14,90</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seção Sobre -->
+     <section class="sobre">
+        <div class="container">
+            <div class="sobre-flex">
+                <div class="sobre-imagem">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&h=400&fit=crop" alt="Sobre a empresa">
+                </div>
+                <div class="sobre-texto">
+                    <h2>paixão por café</h2>
+                    <p>Há mais de 10 anos, o Café Aroma seleciona os melhores grãos de cafeterias artesanais do brasil e do mundo.</p>
+                    <p>Nossa missãp é proporcionar experiências únicas através de cafés especiais, preparados com técnica e carinho.</p>
+                    <ul class="Beneficios">
+                        <li>✓ Grãos 100% arábica</li>
+                        <li>✓ Torra artesanal</li>
+                        <li>✓ Origem rastreável</li>
+                        <li>✓ Comércio justo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4> Café Aroma</h4>
+                    <p>Os melhores cafés especiais para você</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>contato@cafearoma.com.br</p>
+                    <p>(11)99999-9999</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <p>Instagram | Facebook | twitter</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Café Aroma. Todos os direitos reservados.</p>
+            </div>
+        </div>
+     </footer>
