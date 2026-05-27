@@ -106,6 +106,95 @@
                </div>
             </div>
         </section>
+        <section id="contato" class="contato-section">
+            <div class="section-header">
+                <span class="section-ebw">Fale Conosco</span>
+                <h2 class="section-title">Contato & Reservas</h2>
+                <div class="title-divido"></div>
+            </div>
+            <div class="container">
+                <div class="contato-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="ph ph-map-pin"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Endereço</h3>
+                            <p>Av. Clara Gianotti de Souza, 257 – Centro, Registro - SP (CEP: 11900-000).</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="ph ph-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Telefone</h3>
+                            <p>(13) 99781-0579 <br>
+                            (13) 3822-1998</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="ph ph-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Horário de Funcionamento</h3>
+                            <p>Terça a Domingo:<br>18h - 23h</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <div class="contato-form-card">
+                        <h3 class="fomr-title">Envie uma Mensagem</h3>
+                        <form id="contatoform">
+                            <div class="row g-3">
+                                <div class="col-md6">
+                                    <label for="inputName" class="form-label">Nome Completo</label>
+                                    <input type="text" class="form-control form control-lg" id="inputName" placeholder="Digite seu nome" required>
+                                </div>
+                                <div class="col-md6">
+                                    <label for="inputEmail" class="form-label">E-mail</label>
+                                    <input type="email" class="form-control form control-lg" id="inputEmail" placeholder="Digite seu e-mail" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputSubject" class="form-label">Assunto</label>
+                                    <input type="text" class="form-control form control-lg" id="inputSubject" placeholder="Eventos, Dúvidas, Elogios" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputMessage" class="form-label">Mensagem</label>
+                                    <textarea class="form-control form control-lg" id="inputMessage" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                                </div>
+                                <button type="button" class="btn btn-danger btn-lg px-5 py-3 fw-bold" data-bs-toggle="modal" data-bs-target="#modalSucesso">Enviar Mensagem</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2026 Bella Pizza. Todos os direitos reservados.</p>
+            </div>
+        </footer>
     </main>
+    <div class="modal fade" id="#modalSucesso" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title fw-bold" id="successModalLabel">Mensagem Enviada!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body p-4 text-center">
+                    <div class="success-icon mb-3 fs-1 text-success">✔️</div>
+                    <h4 class="mb-2 fw-sembold">Olá!</h4>
+                    <p class="text-muted fs-5">Agradecemos o seu contato. Sua foi recebida com sucesso por nossa euqipe. Em breve entraremos em contato!</p>
+                </div>
+                <div class="modal-footer justify-content-center border-0 pb-4">
+                    <button type="button" class="btn btn-success px-4 py-2 rounded-pill fw-bold" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
