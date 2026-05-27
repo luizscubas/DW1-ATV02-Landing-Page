@@ -1,122 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bella Pizza</title>
-     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=K2D:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <!-- Header com Flexbox -->
     <header class="header">
-        <div class="container">
-            <div class="nav">
-                <div class="logo">Bella Pizza</div>
-                <nav class="menu">
-                    <a href="#home">Início</a>
-                    <a href="#produtos">Produtos</a>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#contato">Contato</a>
-                </nav>
-            </div>
+        <div class="logo">
+            <span class="logo_style">Bella</span> Pizza
         </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
+    <main>
+        <section id="hero" class="section-hero">
+            <div class="overlay-hero"></div>
+            <div class="hero-content">
+                <div class="alert alert-warning">
+                    <i class="ph ph-sparkle alert-icon"></i>
+                    <strong>Oferta de Hoje:</strong> Ganhe 15% de desconto no seu primeiro pedido com o cupom <strong>BELLA15</strong>!
+                </div>
+                <h1 class="hero-titulo">Tradizione Italiana</h1>
+                <p class="subt-hero">Ingredientes selecionados, fermentação natural de 48h e muito amor no forno a lenha.</p>
+                <div class="hero-button-wrapper">
+                    <span class="hero-badge">Oferta!</span>
+                    <a href="#cardapio" class="btn btn-danger btn-lg px-5 py-3 fw-bold rounded-pill shadow-lg text-uppercase fs-5">Peça agora</a>
+                </div>
+            </div>
+        </section>
+        <section id="cardapio" class="cardapio-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="section-title">Nosso Cardápio</h2>
+                    <div class="section-underline"></div>
+                </div>
 
-    <!-- Hero Section com Flexbox -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>    O sabor da Itália na sua mesa</h1>
-            <p>Pizzas artesanais feitas com ingredientes frescos e selecionados</p>
-            <button class="btn-primary">Peça já sua pizza!</button>
-        </div>
-    </section>
-
-    <!-- Cards de Produtos com Flexbox -->
-    <section class="produtos" id="produtos">
-        <div class="container">
-            <h2 class="section-title">Nossos Cafés</h2>
-
-            <div class="cards">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=300&fit=crop" alt="Café Expresso">
-                    <div class="card-content">
-                        <h3>Expresso Intenso</h3>
-                        <p>Sabor marcante e encorpado, perfeito para quem aprecia café forte</p>
-                        <span class="price">R$ 18,90</span>
+                <div class="pizza-cards">
+                    <article class="pizza-card">
+                        <div class="pizza-imagem">
+                            <img src="img/" alt="Pizza de Calabresa" class="pizza-image">
+                        </div>
+                        <div class="pizza-info">
+                            <h3 class="pizza-name">A Moda da Casa</h3>
+                            <p class="pizza-description">Molho de tomate artesanal da casa, muçarela, calabresa defumada, cebola roxa caramelizada e azeitonas pretas.</p>
+                        </div>
+                    </article>
+                    <article class="pizza-card">
+                        <div class="pizza-imagem">
+                            <img src="img/" alt="Pizza Margherita" class="pizza-image">
+                        </div>
+                        <div class="pizza-info">
+                            <h3 class="pizza-name">Margherita Clássica</h3>
+                            <p class="pizza-description">Molho de tomates italianos frescos, muçarela de búfala fatiada, rodelas de tomate cereja, manjericão fresco e azeite extra virgem.</p>
+                        </div>
+                    </article>
+                    <article class="pizza-card">
+                        <div class="pizza-imagem">
+                            <img src="img/" alt="Pizza Quatro Queijos" class="pizza-image">
+                        </div>
+                        <div class="pizza-info">
+                            <h3 class="pizza-name">Quatro Queijos</h3>
+                            <p class="pizza-description">Molho de tomate da casa, muçarela, gorgonzola Dolce cremoso, provolone defumado artesanal e parmesão curado ralado na hora.</p>
+                        </div>
+                    </article>
+                    <article class="pizza-card">
+                        <div class="pizza-imagem">
+                            <img src="img/" alt="Pizza Portuguesa" class="pizza-image">
+                        </div>
+                        <div class="pizza-info">
+                            <h3 class="pizza-name">Portuguesa</h3>
+                            <p class="pizza-description">Molho fresco, muçarela, presunto cozido de alta qualidade, ovos de granja fatiados, cebola doce, ervilhas frescas e azeitonas pretas.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="sobre" class="sobre-section">
+            <div class="container">
+               <div class="flex-container">
+                <div class="iamgem-sobre">
+                    <img src="img/" alt="">
+                </div>
+                <div class="sobre-text">
+                    <div class="section-titulo align start">
+                        <h2></h2>
+                        <div class="section-underline"></div>
                     </div>
+                    <p class="sobre-paragrafo">Fundada em 1998, a <strong>Bella Pizza</strong>nasceu da paixão de uma família italiana em trazer o verdadeiro sabor de Nápoles para a sua mesa. Cada detalhe da nossa preparação é feito com extremo respeito à história da gastronomia. </p>
+                    <p class="sobre-paragraph">Nossas massas passam por um processo de fermentação lenta e natural de 48 horas (levain), garantindo uma digestão leve e bordas incrivelmente crocantes por fora e macias por dentro. Assamos tudo em nosso forno a lenha clássico de pedra vulcânica a 450°C.</p>
+                    <p class="sobre-paragraph">Mais do que alimentar, nós queremos proporcionar uma experiência gastronômica inesquecível, unindo afeto, qualidade e ingredientes importados diretamente dos melhores produtores italianos.</p>
                 </div>
-
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=400&h=300&fit=crop" alt="Café Cappuccino">
-                    <div class="card-content">
-                        <h3>Cappuccino Cremoso</h3>
-                        <p>Combinação perfeita de café, leite vaporizado e espuma aveludada</p>
-                        <span class="price">R$ 15,90</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop" alt="Café Latte">
-                    <div class="card-content">
-                        <h3>Latte Suave</h3>
-                        <p>Café suave com muito leite, ideal para momentos relaxantes</p>
-                        <span class="price">R$ 14,90</span>
-                    </div>
-                </div>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <!-- seção Sobre -->
-     <section class="sobre">
-        <div class="container">
-            <div class="sobre-flex">
-                <div class="sobre-imagem">
-                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&h=400&fit=crop" alt="Sobre a empresa">
-                </div>
-                <div class="sobre-texto">
-                    <h2>paixão por café</h2>
-                    <p>Há mais de 10 anos, o Café Aroma seleciona os melhores grãos de cafeterias artesanais do brasil e do mundo.</p>
-                    <p>Nossa missãp é proporcionar experiências únicas através de cafés especiais, preparados com técnica e carinho.</p>
-                    <ul class="Beneficios">
-                        <li>✓ Grãos 100% arábica</li>
-                        <li>✓ Torra artesanal</li>
-                        <li>✓ Origem rastreável</li>
-                        <li>✓ Comércio justo</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-     </section>
-
-     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4> Café Aroma</h4>
-                    <p>Os melhores cafés especiais para você</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Contato</h4>
-                    <p>contato@cafearoma.com.br</p>
-                    <p>(11)99999-9999</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Redes Sociais</h4>
-                    <p>Instagram | Facebook | twitter</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Café Aroma. Todos os direitos reservados.</p>
-            </div>
-        </div>
-     </footer>
+        </section>
+    </main>
+</body>
+</html>
