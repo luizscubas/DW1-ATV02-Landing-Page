@@ -52,7 +52,7 @@ img {
     display: block;
 }
 
-.main-header {
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -585,7 +585,7 @@ img {
     box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.15) !important;
 }
 
-.main-footer {
+.footer {
     background-color: var(--color-text-primary);
     color: #FAF8F5;
     padding: 40px 24px;
